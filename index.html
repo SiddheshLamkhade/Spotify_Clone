@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css"/>
+    <!--External style sheet is added above-->
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!--Full Page Content Two divs-->
+    <div class="containerofdiv flex bg-black">
+
+      <!--Left div (SideBar)...............................-->
+      <div class="leftdiv">
+        <!--Left div's Top div which is Home-->
+        <div class="home bg-grey rounded m-1 p-1">
+            <ul>
+                <li><a href="https://open.spotify.com/"><img class="invert" src="Accets/img/logo.svg" alt="this is logo"></a></li>
+                <li><img class="invert" src="Accets/img/home.svg" alt="home">HOME</li>
+                <li><img class="invert" src="Accets/img/search.svg" alt="search">SEARCH</li>
+            </ul>
+        </div>
+        <!--Left div's Bottom div which is Library-->
+        <div class="library bg-grey rounded m-1 p-1">
+            <!--heading in library-->
+            <div class="heading">
+                <img class="invert" src="Accets/img/playlist.svg" alt="It's playlist icon">
+                <h2 style="font-size: 14px;">Your Library</h2>
+            </div>
+            <!--footer in library-->
+            <div class="footer">
+                <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                </div>
+                <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+            </div>
+        </div>
+        
+
+      </div>
+
+      <!--Right div ...............................-->
+      <div class="rightdiv bg-grey rounded p-1">
+        <!--Right div's header cosisting nav and buttons of signin and login-->
+        <div class="header">
+            <!--nav in header-->
+            <div class="nav">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                    <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff" fill="none">
+                    <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <!--buttons in header-->
+            <div class="buttons">
+                <button class="signupbtn">Sign up</button>
+                <button class="loginbtn">Login</button>
+            </div>
+        </div>
+
+        <!--Right div's SpotifyPlaylists cosisting all cardContainer-->
+        <div class="spotifyPlaylists">
+            <h1>Spotify playlists</h1>
+            <div class="cardContainer">
+                <div class="card">
+                    <img src="Accets/img/cover.jpg" alt="">
+                    <h2>Happy Hits!</h2>
+                    <p>Hits to boost your mood and fill you with happiness</p>
+                </div>            
+                
+            </div>
+        </div>
+        <!--Right div's Playbar which is at bottom-->
+        <div class="playbar">
+            <div class="songinfo"></div>
+            <div class="songbuttons">
+                <img src="Accets/img/prevsong.svg" alt="">
+                <img src="Accets/img/play.svg" alt="">
+                <img src="Accets/img/nextsong.svg" alt="">
+            </div>
+            <div class="songtime"></div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
