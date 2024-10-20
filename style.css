@@ -156,16 +156,25 @@ body
 {
     position:absolute;
     bottom: 0;
-    background-color: green;
-    width: 100%;
+    background-color: rgb(80, 79, 79);
+    width: 90%;
     padding: 15px;
-    margin-bottom:15px;
+    margin-bottom:3px;
 }
 .songbuttons
 {
     display: flex;
     justify-content: center;
     gap: 12px;
+    color:white;
+    filter: invert(1);
 
 }
-.songbuttons
+.songList ul
+{
+    padding: 0 12px;
+}
+.songList ul li 
+{
+    list-style-type: decimal;   
+}
